@@ -7,40 +7,40 @@
 
 <p align="center">
   <a href="https://drone.gitea.io/go-gitea/gitea" title="Build Status">
-    <img src="https://drone.gitea.io/api/badges/go-gitea/gitea/status.svg?ref=refs/heads/main">
+    <img aria-hidden src="https://drone.gitea.io/api/badges/go-gitea/gitea/status.svg?ref=refs/heads/main">
   </a>
   <a href="https://discord.gg/Gitea" title="Join the Discord chat at https://discord.gg/Gitea">
-    <img src="https://img.shields.io/discord/322538954119184384.svg">
+    <img aria-hidden src="https://img.shields.io/discord/322538954119184384.svg">
   </a>
   <a href="https://codecov.io/gh/go-gitea/gitea" title="Codecov">
-    <img src="https://codecov.io/gh/go-gitea/gitea/branch/main/graph/badge.svg">
+    <img aria-hidden src="https://codecov.io/gh/go-gitea/gitea/branch/main/graph/badge.svg">
   </a>
   <a href="https://goreportcard.com/report/code.gitea.io/gitea" title="Go Report Card">
-    <img src="https://goreportcard.com/badge/code.gitea.io/gitea">
+    <img aria-hidden src="https://goreportcard.com/badge/code.gitea.io/gitea">
   </a>
   <a href="https://godoc.org/code.gitea.io/gitea" title="GoDoc">
-    <img src="https://godoc.org/code.gitea.io/gitea?status.svg">
+    <img aria-hidden src="https://godoc.org/code.gitea.io/gitea?status.svg">
   </a>
   <a href="https://github.com/go-gitea/gitea/releases/latest" title="GitHub release">
-    <img src="https://img.shields.io/github/release/go-gitea/gitea.svg">
+    <img aria-hidden src="https://img.shields.io/github/release/go-gitea/gitea.svg">
   </a>
   <a href="https://www.codetriage.com/go-gitea/gitea" title="Help Contribute to Open Source">
-    <img src="https://www.codetriage.com/go-gitea/gitea/badges/users.svg">
+    <img aria-hidden src="https://www.codetriage.com/go-gitea/gitea/badges/users.svg">
   </a>
   <a href="https://opencollective.com/gitea" title="Become a backer/sponsor of gitea">
-    <img src="https://opencollective.com/gitea/tiers/backers/badge.svg?label=backers&color=brightgreen">
+    <img aria-hidden src="https://opencollective.com/gitea/tiers/backers/badge.svg?label=backers&color=brightgreen">
   </a>
   <a href="https://opensource.org/licenses/MIT" title="License: MIT">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg">
+    <img aria-hidden src="https://img.shields.io/badge/License-MIT-blue.svg">
   </a>
   <a href="https://crowdin.com/project/gitea" title="Crowdin">
-    <img src="https://badges.crowdin.net/gitea/localized.svg">
+    <img aria-hidden src="https://badges.crowdin.net/gitea/localized.svg">
   </a>
   <a href="https://www.tickgit.com/browse?repo=github.com/go-gitea/gitea&branch=main" title="TODOs">
-    <img src="https://badgen.net/https/api.tickgit.com/badgen/github.com/go-gitea/gitea/main">
+    <img aria-hidden src="https://badgen.net/https/api.tickgit.com/badgen/github.com/go-gitea/gitea/main">
   </a>
   <a href="https://www.bountysource.com/teams/gitea" title="Bountysource">
-    <img src="https://img.shields.io/bountysource/team/gitea/activity">
+    <img aria-hidden src="https://img.shields.io/bountysource/team/gitea/activity">
   </a>
 </p>
 
@@ -129,22 +129,22 @@ The official Gitea CLI is developed at [gitea/tea](https://gitea.com/gitea/tea).
 
 Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/gitea#backer)]
 
-<a href="https://opencollective.com/gitea#backers" target="_blank"><img src="https://opencollective.com/gitea/backers.svg?width=890"></a>
+<a href="https://opencollective.com/gitea#backers" target="_blank"><img alt="All financial backers" src="https://opencollective.com/gitea/backers.svg?width=890"></a>
 
 ## Sponsors
 
 Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/gitea#sponsor)]
 
-<a href="https://opencollective.com/gitea/sponsor/0/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/1/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/2/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/3/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/4/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/5/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/6/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/7/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/8/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/9/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/9/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/0/website" target="_blank"><img alt="Two Sigma" src="https://opencollective.com/gitea/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/1/website" target="_blank"><img alt="Spacebear" src="https://opencollective.com/gitea/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/2/website" target="_blank"><img alt="Linder Hard- und Software" src="https://opencollective.com/gitea/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/3/website" target="_blank"><img alt="AllSpice" src="https://opencollective.com/gitea/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/4/website" target="_blank"><img alt="Cloudron" src="https://opencollective.com/gitea/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/5/website" target="_blank"><img alt="towhee" src="https://opencollective.com/gitea/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/6/website" target="_blank"><img alt="Hostea" src="https://opencollective.com/gitea/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/7/website" target="_blank"><img alt="Manitz IT" src="https://opencollective.com/gitea/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/8/website" target="_blank"><img alt="DigitalOcean" src="https://opencollective.com/gitea/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/gitea/sponsor/9/website" target="_blank"><img alt="GitHub Sponsors" src="https://opencollective.com/gitea/sponsor/9/avatar.svg"></a>
 
 ## FAQ
 
