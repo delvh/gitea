@@ -7,40 +7,40 @@
 
 <p align="center">
   <a href="https://drone.gitea.io/go-gitea/gitea" title="Build Status">
-    <img aria-hidden src="https://drone.gitea.io/api/badges/go-gitea/gitea/status.svg?ref=refs/heads/main">
+    <img aria-hidden="true" src="https://drone.gitea.io/api/badges/go-gitea/gitea/status.svg?ref=refs/heads/main">
   </a>
   <a href="https://discord.gg/Gitea" title="Join the Discord chat at https://discord.gg/Gitea">
-    <img aria-hidden src="https://img.shields.io/discord/322538954119184384.svg">
+    <img aria-hidden="true" src="https://img.shields.io/discord/322538954119184384.svg">
   </a>
   <a href="https://codecov.io/gh/go-gitea/gitea" title="Codecov">
-    <img aria-hidden src="https://codecov.io/gh/go-gitea/gitea/branch/main/graph/badge.svg">
+    <img aria-hidden="true" src="https://codecov.io/gh/go-gitea/gitea/branch/main/graph/badge.svg">
   </a>
   <a href="https://goreportcard.com/report/code.gitea.io/gitea" title="Go Report Card">
-    <img aria-hidden src="https://goreportcard.com/badge/code.gitea.io/gitea">
+    <img aria-hidden="true" src="https://goreportcard.com/badge/code.gitea.io/gitea">
   </a>
   <a href="https://godoc.org/code.gitea.io/gitea" title="GoDoc">
-    <img aria-hidden src="https://godoc.org/code.gitea.io/gitea?status.svg">
+    <img aria-hidden="true" src="https://godoc.org/code.gitea.io/gitea?status.svg">
   </a>
   <a href="https://github.com/go-gitea/gitea/releases/latest" title="GitHub release">
-    <img aria-hidden src="https://img.shields.io/github/release/go-gitea/gitea.svg">
+    <img aria-hidden="true" src="https://img.shields.io/github/release/go-gitea/gitea.svg">
   </a>
   <a href="https://www.codetriage.com/go-gitea/gitea" title="Help Contribute to Open Source">
-    <img aria-hidden src="https://www.codetriage.com/go-gitea/gitea/badges/users.svg">
+    <img aria-hidden="true" src="https://www.codetriage.com/go-gitea/gitea/badges/users.svg">
   </a>
   <a href="https://opencollective.com/gitea" title="Become a backer/sponsor of gitea">
-    <img aria-hidden src="https://opencollective.com/gitea/tiers/backers/badge.svg?label=backers&color=brightgreen">
+    <img aria-hidden="true" src="https://opencollective.com/gitea/tiers/backers/badge.svg?label=backers&color=brightgreen">
   </a>
   <a href="https://opensource.org/licenses/MIT" title="License: MIT">
-    <img aria-hidden src="https://img.shields.io/badge/License-MIT-blue.svg">
+    <img aria-hidden="true" src="https://img.shields.io/badge/License-MIT-blue.svg">
   </a>
   <a href="https://crowdin.com/project/gitea" title="Crowdin">
-    <img aria-hidden src="https://badges.crowdin.net/gitea/localized.svg">
+    <img aria-hidden="true" src="https://badges.crowdin.net/gitea/localized.svg">
   </a>
   <a href="https://www.tickgit.com/browse?repo=github.com/go-gitea/gitea&branch=main" title="TODOs">
-    <img aria-hidden src="https://badgen.net/https/api.tickgit.com/badgen/github.com/go-gitea/gitea/main">
+    <img aria-hidden="true" src="https://badgen.net/https/api.tickgit.com/badgen/github.com/go-gitea/gitea/main">
   </a>
   <a href="https://img.shields.io/bountysource/team/gitea" title="Bountysource">
-    <img aria-hidden src="https://img.shields.io/bountysource/team/gitea/activity">
+    <img aria-hidden="true" src="https://img.shields.io/bountysource/team/gitea/activity">
   </a>
 </p>
 
