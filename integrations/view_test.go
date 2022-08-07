@@ -21,6 +21,6 @@ func TestRenderFileSVGIsInImgTag(t *testing.T) {
 
 	doc := NewHTMLParser(t, resp.Body)
 	src, exists := doc.doc.Find(".file-view img").Attr("src")
-	assert.True(t, exists, "The SVG image should be in an <img> tag so that scripts in the SVG are not run")
+	assert.True(t, exists, "The SVG image should be in an <img> tag so that scripts in the SVG are not run") // alt="" <- this comment exists so that this line isn't shown when looking for images missing an alt attribute
 	assert.Equal(t, "/user2/repo2/raw/branch/master/line.svg", src)
 }

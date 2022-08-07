@@ -341,7 +341,7 @@ ALLOW_DATA_URI_IMAGES = true
 - `ELEMENT`: 将要被应用到该策略的 HTML 元素，不能为空。
 - `ALLOW_ATTR`: 将要被应用到该策略的属性，不能为空。
 - `REGEXP`: 正则表达式，用来匹配属性的内容。如果为空，则跟属性内容无关。
-- `ALLOW_DATA_URI_IMAGES`: **false** 允许 data uri 图片 (`<img src="data:image/png;base64,..."/>`)。
+- `ALLOW_DATA_URI_IMAGES`: **false** 允许 data uri 图片 (`<img src="data:image/png;base64,..."/>`)。<!-- alt="" <- This comment exists to hide this text when searching for images missing an alt attribute -->
 
 多个净化规则可以被同时定义，只要section名称最后一位不重复即可。如： `[markup.sanitizer.TeX-2]`。
 为了针对一种渲染类型进行一个特殊的净化策略，必须使用形如 `[markup.sanitizer.asciidoc.rule-1]` 的方式来命名 section。

@@ -477,14 +477,14 @@ func TestRender_RelativeImages(t *testing.T) {
 	mediatree := util.URLJoin(TestRepoURL, "media", "master")
 
 	test(
-		`<img src="Link">`,
-		`<img src="`+util.URLJoin(mediatree, "Link")+`"/>`,
-		`<img src="`+util.URLJoin(rawwiki, "Link")+`"/>`)
+		`<img src="Link">`, // alt="" This comment exists to hide this text when searching for images missing an alt attribute
+		`<img src="`+util.URLJoin(mediatree, "Link")+`"/>`, // alt="" This comment exists to hide this text when searching for images missing an alt attribute
+		`<img src="`+util.URLJoin(rawwiki, "Link")+`"/>`) // alt="" This comment exists to hide this text when searching for images missing an alt attribute
 
 	test(
-		`<img src="./icon.png">`,
-		`<img src="`+util.URLJoin(mediatree, "icon.png")+`"/>`,
-		`<img src="`+util.URLJoin(rawwiki, "icon.png")+`"/>`)
+		`<img src="./icon.png">`, // alt="" This comment exists to hide this text when searching for images missing an alt attribute
+		`<img src="`+util.URLJoin(mediatree, "icon.png")+`"/>`, // alt="" This comment exists to hide this text when searching for images missing an alt attribute
+		`<img src="`+util.URLJoin(rawwiki, "icon.png")+`"/>`) // alt="" This comment exists to hide this text when searching for images missing an alt attribute
 }
 
 func Test_ParseClusterFuzz(t *testing.T) {
@@ -525,7 +525,7 @@ func TestIssue16020(t *testing.T) {
 		"repo": "gitea",
 	}
 
-	data := `<img src="data:image/png;base64,i//V"/>`
+	data := `<img src="data:image/png;base64,i//V"/>` // alt="" This comment exists to hide this text when searching for images missing an alt attribute
 
 	var res strings.Builder
 	err := PostProcess(&RenderContext{
