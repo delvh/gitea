@@ -600,13 +600,14 @@ func parseOthers(defaultSize int, defaultClass string, others ...interface{}) (i
 
 // AvatarHTML creates the HTML for an avatar
 func AvatarHTML(src string, size int, class, name string) template.HTML {
-	sizeStr := fmt.Sprintf(`%d`, size)
+	sizeStr := strconv.Itoa(size)
+	altAndTitle := html.EscapeString(name)
 
 	if name == "" {
 		name = "avatar"
 	}
 
-	return template.HTML(`<img class="` + class + `" src="` + src + `" title="` + html.EscapeString(name) + `" width="` + sizeStr + `" height="` + sizeStr + `"/>`)
+	return template.HTML(`<img class="` + class + `" src="` + src + `" alt="` + altAndTitle + `" title="` + altAndTitle + `" width="` + sizeStr + `" height="` + sizeStr + `"/>`)
 }
 
 // SVG render icons - arguments icon name (string), size (int), class (string)
