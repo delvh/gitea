@@ -8,27 +8,27 @@
 			{{if .PageIsSettingsHooksNew}}{{.locale.Tr "repo.settings.add_webhook"}}{{else}}{{.locale.Tr "repo.settings.update_webhook"}}{{end}}
 			<div class="ui right">
 				{{if eq .HookType "gitea"}}
-					<img width="26" height="26" src="{{AssetUrlPrefix}}/img/gitea.svg">
+					<img alt="{{.locale.Tr "repo.web_hook.alt_attribute" "Gitea"}}" width="26" height="26" src="{{AssetUrlPrefix}}/img/gitea.svg">
 				{{else if eq .HookType "gogs"}}
-					<img width="26" height="26" src="{{AssetUrlPrefix}}/img/gogs.ico">
+					<img alt="{{.locale.Tr "repo.web_hook.alt_attribute" "Gogs"}}"  width="26" height="26" src="{{AssetUrlPrefix}}/img/gogs.ico">
 				{{else if eq .HookType "slack"}}
-					<img width="26" height="26" src="{{AssetUrlPrefix}}/img/slack.png">
+					<img alt="{{.locale.Tr "repo.web_hook.alt_attribute" "Slack"}}"  width="26" height="26" src="{{AssetUrlPrefix}}/img/slack.png">
 				{{else if eq .HookType "discord"}}
-					<img width="26" height="26" src="{{AssetUrlPrefix}}/img/discord.png">
+					<img alt="{{.locale.Tr "repo.web_hook.alt_attribute" "Discord"}}"  width="26" height="26" src="{{AssetUrlPrefix}}/img/discord.png">
 				{{else if eq .HookType "dingtalk"}}
-					<img width="26" height="26" src="{{AssetUrlPrefix}}/img/dingtalk.ico">
+					<img alt="{{.locale.Tr "repo.web_hook.alt_attribute" "Dingtalk"}}"  width="26" height="26" src="{{AssetUrlPrefix}}/img/dingtalk.ico">
 				{{else if eq .HookType "telegram"}}
-					<img width="26" height="26" src="{{AssetUrlPrefix}}/img/telegram.png">
+					<img alt="{{.locale.Tr "repo.web_hook.alt_attribute" "Telegram"}}"  width="26" height="26" src="{{AssetUrlPrefix}}/img/telegram.png">
 				{{else if eq .HookType "msteams"}}
-					<img width="26" height="26" src="{{AssetUrlPrefix}}/img/msteams.png">
+					<img alt="{{.locale.Tr "repo.web_hook.alt_attribute" "Microsoft Teams"}}"  width="26" height="26" src="{{AssetUrlPrefix}}/img/msteams.png">
 				{{else if eq .HookType "feishu"}}
-					<img width="26" height="26" src="{{AssetUrlPrefix}}/img/feishu.png">
+					<img alt="{{.locale.Tr "repo.web_hook.alt_attribute" "Feishu"}}"  width="26" height="26" src="{{AssetUrlPrefix}}/img/feishu.png">
 				{{else if eq .HookType "matrix"}}
-					<img width="26" height="26" src="{{AssetUrlPrefix}}/img/matrix.svg">
+					<img alt="{{.locale.Tr "repo.web_hook.alt_attribute" "Matrix"}}"  width="26" height="26" src="{{AssetUrlPrefix}}/img/matrix.svg">
 				{{else if eq .HookType "wechatwork"}}
-					<img width="26" height="26" src="{{AssetUrlPrefix}}/img/wechatwork.png">
+					<img alt="{{.locale.Tr "repo.web_hook.alt_attribute" "WeChat Work"}}"  width="26" height="26" src="{{AssetUrlPrefix}}/img/wechatwork.png">
 				{{else if eq .HookType "packagist"}}
-					<img width="26" height="26" src="{{AssetUrlPrefix}}/img/packagist.png">
+					<img alt="{{.locale.Tr "repo.web_hook.alt_attribute" "Packagist"}}"  width="26" height="26" src="{{AssetUrlPrefix}}/img/packagist.png">
 				{{end}}
 			</div>
 		</h4>
