@@ -702,6 +702,13 @@ and
 - `SEND_BUFFER_LEN`: **100**: Buffer length of mailing queue. **DEPRECATED** use `LENGTH` in `[queue.mailer]`
 - `SEND_AS_PLAIN_TEXT`: **false**: Send mails only in plain text, without HTML alternative.
 
+## Plugin (`plugin`)
+
+⚠️ This section is for Gitea 1.19+ and will be ignored on previous versions.
+
+- `BASE_DIRECTORY`: **%(CUSTOM_PATH)s/plugins/**: The directory where all plugins are placed
+- `PLUGIN_GLOBS`: **\***: Comma-separated list of globs (see the go filepath.Glob syntax) that finds all plugins, i.e. 'gitea-*,ṕlugin-*'. All files matching these globs (starting from the BASE_DIRECTORY) are expected to be plugins
+
 ## Cache (`cache`)
 
 - `ENABLED`: **true**: Enable the cache.
