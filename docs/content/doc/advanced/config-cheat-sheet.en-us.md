@@ -24,7 +24,7 @@ typically be found at `/etc/gitea/conf/app.ini`.
 
 The defaults provided here are best-effort (not built automatically). They are
 accurately recorded in [app.example.ini](https://github.com/go-gitea/gitea/blob/main/custom/conf/app.example.ini)
-(s/main/\<tag|release\>). Any string in the format `%(X)s` is a feature powered
+(s/main/\<tag|release\>). Any string in the format `%(X)` is a feature powered
 by [ini](https://github.com/go-ini/ini/#recursive-values), for reading values recursively.
 
 Values containing `#` or `;` must be quoted using `` ` `` or `"""`.
@@ -246,7 +246,7 @@ The following configuration set `Content-Type: application/vnd.android.package-a
 - `PROXY_PROTOCOL_HEADER_TIMEOUT`: **5s**: Timeout to wait for PROXY protocol header (set to 0 to have no timeout)
 - `PROXY_PROTOCOL_ACCEPT_UNKNOWN`: **false**: Accept PROXY protocol headers with Unknown type.
 - `DOMAIN`: **localhost**: Domain name of this server.
-- `ROOT_URL`: **%(PROTOCOL)s://%(DOMAIN)s:%(HTTP\_PORT)s/**:
+- `ROOT_URL`: **%(PROTOCOL)://%(DOMAIN):%(HTTP\_PORT)/**:
    Overwrite the automatically generated public URL.
    This is useful if the internal and the external URL don't match (e.g. in Docker).
 - `STATIC_URL_PREFIX`: **\<empty\>**:
@@ -254,7 +254,7 @@ The following configuration set `Content-Type: application/vnd.android.package-a
    This includes CSS files, images, JS files and web fonts.
    Avatar images are dynamic resources and still served by Gitea.
    The option can be just a different path, as in `/static`, or another domain, as in `https://cdn.example.com`.
-   Requests are then made as `%(ROOT_URL)s/static/css/index.css` and `https://cdn.example.com/css/index.css` respective.
+   Requests are then made as `%(ROOT_URL)/static/css/index.css` and `https://cdn.example.com/css/index.css` respective.
    The static files are located in the `public/` directory of the Gitea source repository.
 - `HTTP_ADDR`: **0.0.0.0**: HTTP listen address.
   - If `PROTOCOL` is set to `fcgi`, Gitea will listen for FastCGI requests on TCP socket
@@ -264,7 +264,7 @@ The following configuration set `Content-Type: application/vnd.android.package-a
   - If `PROTOCOL` is set to `fcgi`, Gitea will listen for FastCGI requests on TCP socket
      defined by `HTTP_ADDR` and `HTTP_PORT` configuration settings.
 - `UNIX_SOCKET_PERMISSION`: **666**: Permissions for the Unix socket.
-- `LOCAL_ROOT_URL`: **%(PROTOCOL)s://%(HTTP_ADDR)s:%(HTTP_PORT)s/**: Local
+- `LOCAL_ROOT_URL`: **%(PROTOCOL)://%(HTTP_ADDR):%(HTTP_PORT)/**: Local
    (DMZ) URL for Gitea workers (such as SSH update) accessing web service. In
    most cases you do not need to change the default value. Alter it only if
    your SSH server node is not the same as HTTP node. Do not set this variable
@@ -278,12 +278,12 @@ The following configuration set `Content-Type: application/vnd.android.package-a
 - `DISABLE_SSH`: **false**: Disable SSH feature when it's not available.
 - `START_SSH_SERVER`: **false**: When enabled, use the built-in SSH server.
 - `SSH_SERVER_USE_PROXY_PROTOCOL`: **false**: Expect PROXY protocol header on connections to the built-in SSH Server.
-- `BUILTIN_SSH_SERVER_USER`: **%(RUN_USER)s**: Username to use for the built-in SSH Server.
+- `BUILTIN_SSH_SERVER_USER`: **%(RUN_USER)**: Username to use for the built-in SSH Server.
 - `SSH_USER`: **%(BUILTIN_SSH_SERVER_USER)**: SSH username displayed in clone URLs. This is only for people who configure the SSH server themselves; in most cases, you want to leave this blank and modify the `BUILTIN_SSH_SERVER_USER`.
-- `SSH_DOMAIN`: **%(DOMAIN)s**: Domain name of this server, used for displayed clone URL.
+- `SSH_DOMAIN`: **%(DOMAIN)**: Domain name of this server, used for displayed clone URL.
 - `SSH_PORT`: **22**: SSH port displayed in clone URL.
 - `SSH_LISTEN_HOST`: **0.0.0.0**: Listen address for the built-in SSH server.
-- `SSH_LISTEN_PORT`: **%(SSH\_PORT)s**: Port for the built-in SSH server.
+- `SSH_LISTEN_PORT`: **%(SSH\_PORT)**: Port for the built-in SSH server.
 - `SSH_ROOT_PATH`: **~/.ssh**: Root path of SSH directory.
 - `SSH_CREATE_AUTHORIZED_KEYS_FILE`: **true**: Gitea will create a authorized_keys file by default when it is not using the internal ssh server. If you intend to use the AuthorizedKeysCommand functionality then you should turn this off.
 - `SSH_AUTHORIZED_KEYS_BACKUP`: **true**: Enable SSH Authorized Key Backup when rewriting all keys, default is true.
@@ -706,7 +706,7 @@ and
 
 ⚠️ This section is for Gitea 1.19+ and will be ignored on previous versions.
 
-- `BASE_DIRECTORY`: **%(CUSTOM_PATH)s/plugins/**: The directory where all plugins are placed
+- `BASE_DIRECTORY`: **%(CUSTOM_PATH)/plugins/**: The directory where all plugins are placed
 - `PLUGIN_GLOBS`: **\***: Comma-separated list of globs (see the go filepath.Glob syntax) that finds all plugins, i.e. 'gitea-*,ṕlugin-*'. All files matching these globs (starting from the BASE_DIRECTORY) are expected to be plugins
 
 ## Cache (`cache`)
