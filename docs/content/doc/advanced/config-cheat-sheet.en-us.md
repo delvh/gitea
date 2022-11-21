@@ -707,7 +707,7 @@ and
 ⚠️ This section is for Gitea 1.19+ and will be ignored on previous versions.
 
 - `BASE_DIRECTORY`: **%(CUSTOM_PATH)/plugins/**: The directory where all plugins are placed
-- `PLUGIN_GLOBS`: **\***: Comma-separated list of globs (see the go filepath.Glob syntax) that finds all plugins, i.e. 'gitea-*,ṕlugin-*'. All files matching these globs (starting from the BASE_DIRECTORY) are expected to be plugins
+- `PLUGIN_GLOBS`: **\<empty\>**: Comma-separated list of globs (see the go filepath.Glob syntax) that finds all plugins, i.e. 'gitea-*,ṕlugin-*'. All files matching these globs (starting from the BASE_DIRECTORY) are expected to be plugins. Empty by default to prevent unintended behavior.
 
 ## Cache (`cache`)
 
