@@ -1305,6 +1305,7 @@ func NewServices() {
 	newTaskService()
 	NewQueueService()
 	newProject()
+	newPlugin()
 	newMimeTypeMap()
 	newFederationService()
 }
