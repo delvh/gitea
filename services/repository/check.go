@@ -1,6 +1,5 @@
 // Copyright 2020 The Gitea Authors. All rights reserved.
-// Use of this source code is governed by a MIT-style
-// license that can be found in the LICENSE file.
+// SPDX-License-Identifier: MIT
 
 package repository
 
@@ -29,10 +28,8 @@ func GitFsck(ctx context.Context, timeout time.Duration, args []git.CmdArg) erro
 
 	if err := db.Iterate(
 		ctx,
-		new(repo_model.Repository),
 		builder.Expr("id>0 AND is_fsck_enabled=?", true),
-		func(idx int, bean interface{}) error {
-			repo := bean.(*repo_model.Repository)
+		func(ctx context.Context, repo *repo_model.Repository) error {
 			select {
 			case <-ctx.Done():
 				return db.ErrCancelledf("before fsck of %s", repo.FullName())
@@ -64,10 +61,8 @@ func GitGcRepos(ctx context.Context, timeout time.Duration, args ...git.CmdArg) 
 
 	if err := db.Iterate(
 		ctx,
-		new(repo_model.Repository),
 		builder.Gt{"id": 0},
-		func(idx int, bean interface{}) error {
-			repo := bean.(*repo_model.Repository)
+		func(ctx context.Context, repo *repo_model.Repository) error {
 			select {
 			case <-ctx.Done():
 				return db.ErrCancelledf("before GC of %s", repo.FullName())
@@ -113,10 +108,8 @@ func gatherMissingRepoRecords(ctx context.Context) ([]*repo_model.Repository, er
 	repos := make([]*repo_model.Repository, 0, 10)
 	if err := db.Iterate(
 		ctx,
-		new(repo_model.Repository),
 		builder.Gt{"id": 0},
-		func(idx int, bean interface{}) error {
-			repo := bean.(*repo_model.Repository)
+		func(ctx context.Context, repo *repo_model.Repository) error {
 			select {
 			case <-ctx.Done():
 				return db.ErrCancelledf("during gathering missing repo records before checking %s", repo.FullName())
