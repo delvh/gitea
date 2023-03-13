@@ -100,7 +100,9 @@ export function initCancelButtons(rootElement = document) {
   // Possible Solution 3:
   // There are many "cancel button" elements in modal dialogs, Fomantic UI expects they are button-like elements but never submit a form.
   // However, Gitea misused the modal dialog and put the cancel buttons inside forms, so set 'type="button"' for them to prevent the form submission.
-  rootElement.querySelectorAll('.ui.modal form .ui.cancel.button').forEach(cancelButton => cancelButton.setAttribute('type', 'button'));
+  // And there are a few cancel buttons in non-modal forms.
+  // Possible Solution 2 is better, because there are some dynamically created forms (eg: the "Edit Issue Content")
+  rootElement.querySelectorAll('form .ui.cancel.button').forEach(cancelButton => cancelButton.setAttribute('type', 'button'));
 }
 
 export function attachDropdownAria($dropdowns) {
