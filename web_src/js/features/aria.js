@@ -96,9 +96,11 @@ function attachOneDropdownAria($dropdown) {
   $dropdown.on('keyup', (e) => { if (e.key.startsWith('Arrow')) deferredRefreshAria(); });
 }
 
-export function initCancelButtons(rootElement=document) {
-  // Only cancel buttons should have the 'cancel' class, and these buttons should not submit an underlying form, so set 'type="button"' for them
-  rootElement.querySelectorAll('.cancel').forEach(cancelButton => cancelButton.setAttribute('type', 'button'));
+export function initCancelButtons(rootElement = document) {
+  // Possible Solution 3:
+  // There are many "cancel button" elements in modal dialogs, Fomantic UI expects they are button-like elements but never submit a form.
+  // However, Gitea misused the modal dialog and put the cancel buttons inside forms, so set 'type="button"' for them to prevent the form submission.
+  rootElement.querySelectorAll('.ui.modal form .ui.cancel.button').forEach(cancelButton => cancelButton.setAttribute('type', 'button'));
 }
 
 export function attachDropdownAria($dropdowns) {

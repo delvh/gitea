@@ -231,6 +231,7 @@ export function initRepoIssueStatusButton() {
     $statusButton.text($statusButton.data(value.length === 0 ? 'status' : 'status-and-comment'));
   });
   $statusButton.on('click', () => {
+    e.preventDefault();
     $('#status').val($statusButton.data('status-val'));
     $('#comment-form').trigger('submit');
   });

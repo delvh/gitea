@@ -202,7 +202,8 @@ export function initGlobalDropzone() {
 }
 
 export function initGlobalLinkActions() {
-  function showDeletePopup() {
+  function showDeletePopup(e) {
+    e.preventDefault();
     const $this = $(this);
     const dataArray = $this.data();
     let filter = '';
@@ -243,10 +244,10 @@ export function initGlobalLinkActions() {
         });
       }
     }).modal('show');
-    return false;
   }
 
-  function showAddAllPopup() {
+  function showAddAllPopup(e) {
+    e.preventDefault();
     const $this = $(this);
     let filter = '';
     if ($this.attr('id')) {
@@ -272,7 +273,6 @@ export function initGlobalLinkActions() {
         });
       }
     }).modal('show');
-    return false;
   }
 
   function linkAction(e) {
@@ -318,6 +318,13 @@ export function initGlobalLinkActions() {
 }
 
 export function initGlobalButtons() {
+  // Possible Solution 2:
+  // There are many "cancel button" elements in modal dialogs, Fomantic UI expects they are button-like elements but never submit a form.
+  // However, Gitea misused the modal dialog and put the cancel buttons inside forms, so we must prevent the form submission.
+  $(document).on('click', '.ui.modal form .ui.cancel.button', event => {
+    event.preventDefault();
+  });
+
   $('.show-panel.button').on('click', function (event) {
     event.preventDefault();
     showElem($(this).data('panel'));
